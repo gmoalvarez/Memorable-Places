@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		B3509DE21B700C4F001BB398 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3509DE11B700C4F001BB398 /* AppDelegate.swift */; };
-		B3509DE41B700C4F001BB398 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3509DE31B700C4F001BB398 /* ViewController.swift */; };
 		B3509DE71B700C4F001BB398 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3509DE51B700C4F001BB398 /* Main.storyboard */; };
 		B3509DE91B700C4F001BB398 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3509DE81B700C4F001BB398 /* Assets.xcassets */; };
 		B3509DEC1B700C4F001BB398 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3509DEA1B700C4F001BB398 /* LaunchScreen.storyboard */; };
+		B374B0CD1B701BAE000454F0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B374B0CC1B701BAE000454F0 /* MapViewController.swift */; };
+		B374B0CF1B701BCD000454F0 /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B374B0CE1B701BCD000454F0 /* FavoritesTableViewController.swift */; };
+		B374B0D11B701C49000454F0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B374B0D01B701C49000454F0 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B3509DDE1B700C4F001BB398 /* Memorable Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Memorable Places.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3509DE11B700C4F001BB398 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B3509DE31B700C4F001BB398 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B3509DE61B700C4F001BB398 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3509DE81B700C4F001BB398 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3509DEB1B700C4F001BB398 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3509DED1B700C4F001BB398 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B374B0CC1B701BAE000454F0 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		B374B0CE1B701BCD000454F0 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
+		B374B0D01B701C49000454F0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B374B0D11B701C49000454F0 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +43,7 @@
 		B3509DD51B700C4F001BB398 = {
 			isa = PBXGroup;
 			children = (
+				B374B0D01B701C49000454F0 /* CoreLocation.framework */,
 				B3509DE01B700C4F001BB398 /* Memorable Places */,
 				B3509DDF1B700C4F001BB398 /* Products */,
 			);
@@ -54,9 +60,10 @@
 		B3509DE01B700C4F001BB398 /* Memorable Places */ = {
 			isa = PBXGroup;
 			children = (
-				B3509DE11B700C4F001BB398 /* AppDelegate.swift */,
-				B3509DE31B700C4F001BB398 /* ViewController.swift */,
 				B3509DE51B700C4F001BB398 /* Main.storyboard */,
+				B374B0CC1B701BAE000454F0 /* MapViewController.swift */,
+				B374B0CE1B701BCD000454F0 /* FavoritesTableViewController.swift */,
+				B3509DE11B700C4F001BB398 /* AppDelegate.swift */,
 				B3509DE81B700C4F001BB398 /* Assets.xcassets */,
 				B3509DEA1B700C4F001BB398 /* LaunchScreen.storyboard */,
 				B3509DED1B700C4F001BB398 /* Info.plist */,
@@ -134,8 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3509DE41B700C4F001BB398 /* ViewController.swift in Sources */,
+				B374B0CF1B701BCD000454F0 /* FavoritesTableViewController.swift in Sources */,
 				B3509DE21B700C4F001BB398 /* AppDelegate.swift in Sources */,
+				B374B0CD1B701BAE000454F0 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +293,7 @@
 				B3509DF21B700C4F001BB398 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
